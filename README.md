@@ -1,39 +1,36 @@
 # Dais & Apex — brand assets
 
-The studio mark: an interlocked **D** and **A** — the dais — with a freestanding
-peak between the A's legs — the apex. The D's bowl terminates on an angled cut
-parallel to the A's leg; the white channel between them is the joint of the
-mark, not an accident. Single-color by default; the apex is a separate path
-(`id="apex"`) and can take the accent color at any time.
+The studio mark: an interlocked **D** and **A** — the dais — with an orange
+peak between the A's legs — the apex. Designed by the studio; the master
+artwork is the raster original, kept verbatim. Derived files are produced only
+by background removal, cropping, recoloring the silhouette, and scaling —
+never by redrawing.
 
 ## Files
 
 | File | Use |
 |------|-----|
-| `assets/da-mark.svg` | **Canonical mark.** `currentColor` — recolors to context. |
-| `assets/da-mark-light.svg` | Baked ink for light grounds (`#7d7b7c`). |
-| `assets/da-mark-dark.svg` | Baked ink for dark grounds (`#a8aaae`). |
-| `assets/da-mark-accent.svg` | Two-tone variant: grey structure, orange apex (`#ea8b1e`). |
-| `assets/favicon.svg` | Theme-adaptive favicon (`prefers-color-scheme`). |
-| `assets/favicon-tile.svg` | Mark on a dark rounded tile — raster source. |
-| `assets/favicon-16/32/48.png`, `favicon.ico` | Raster favicons + legacy multi-res ico. |
-| `assets/avatar-512.png` | GitHub org avatar (upload via web UI). |
+| `assets/da-logo.png` | **Master.** Original artwork, transparent background. |
+| `assets/da-logo-black.png` | All-black silhouette — light grounds, print, single-ink. |
+| `assets/da-logo-white.png` | All-white silhouette — dark grounds. |
+| `assets/avatar-512.png` | GitHub org avatar (white tile; upload via web UI). |
+| `assets/favicon-16/32/48.png` | Raster favicons, downscaled from the master. |
+| `assets/favicon.ico` | Multi-resolution icon (16/32/48) for legacy clients. |
 
-## Palette
+## Palette (sampled from the master)
 
 | Token | Hex | Role |
 |-------|-----|------|
-| Structure (light grounds) | `#7d7b7c` | D + A ink on light |
-| Structure (dark grounds) | `#a8aaae` | D + A ink on dark |
-| Apex accent | `#ea8b1e` | Optional peak fill (accent variant) |
-| Tile | `#101216` | Avatar/favicon ground |
+| Structure grey | `#716f6e` | The D and A |
+| Apex orange | `#e67819` | The peak |
 
 ## Usage
 
-- Default is the **single-color** mark; use the accent variant deliberately,
-  not as the everyday form.
-- To recolor the apex in any context: target `#apex` (it is always its own
-  path, even in the single-color files).
-- Keep the channels clear — nothing may touch the white gaps between the D,
-  the A, and the peak; they are part of the mark.
-- Minimum size: the mark holds at 32px; below that, use the tile forms.
+- The color master is the default form. Black/white silhouettes are for
+  single-ink contexts; they are recolors of the same pixels, not redraws.
+- The white channels between the D, the A, and the peak are part of the mark —
+  keep them clear.
+- The master is 158px wide: fine for avatars and below. For large-format uses,
+  regenerate the derived set from a higher-resolution export of the original
+  artwork using the same pipeline; do not upscale beyond the avatar size, and
+  do not substitute a redrawn version.
