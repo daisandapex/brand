@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g fill="currentColor">
+    <path d="M7.75 49 L7.75 17 L24 17 Q42 17 35.4 27 L32 31.8 Q35 21.5 24 21.5 L12.25 21.5 L12.25 44.5 L19 44.5 L19 49 Z"/>
+    <path fill-rule="evenodd" d="M42 14.75 L57.3 49 H26.7 Z M42 24.5 L53 49 H31 Z"/>
+    <path id="apex" d="M42 33 L47.5 49 H36.5 Z"/>
+  </g>
+</svg>
